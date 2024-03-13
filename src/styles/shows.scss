@@ -5,10 +5,19 @@
     min-height: 50vw;
 
     &__list {
+
+        p{
+            margin-bottom: 15px;
+        }
+
         margin-top: 44px;
         display: none;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 24px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
 
 
         &--is-active {
@@ -34,6 +43,20 @@
                 grid-template-columns: 1fr;
                 margin-top: 40px;
                 margin-left: 33%;
+
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 10px;
+        
+                }
+
+                @media (min-width: 640px) and (max-width: 1023px) {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
         
             }
         }
@@ -42,6 +65,19 @@
     &__tabs {
         display: flex;
         justify-content: center;
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 251px;
+        }
+
+        @media (min-width: 640px) and (max-width: 1023px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 29px;
+        }
+
 
 
         &__button {
@@ -56,6 +92,11 @@
             border-bottom: 5px solid transparent;
             border-color: rgb(12, 123, 214);
             color: aliceblue;
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+            
+            }
 
         }
     }

@@ -1,34 +1,81 @@
 @use 'variaveis';
 
 .header {
+    width: 100%;
     position: sticky;
     top: 0;
     left: 0;
     background-color: variaveis.$corDefundo;
-    transition: backgroud-color .5s ease;
-    
+    transition: backgroud-color .5s ease; 
+    z-index: 1;
 
     &__container {
         padding: 3px 50px;
         display: flex;
         justify-content: space-between;
         background-color: variaveis.$corDefundo;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            display: block;
+            
+        }
+    
     }
 
     &__logo {
         width: 70px;
         padding-top: 10px;
+
+        @media (max-width: 768px) {
+            width: 80px;
+            margin-left: 35%;
+        }
+
+        @media (min-width: 640px) and (max-width: 1023px) {
+            width: 100px;
+            margin-left: 40%;
+        }
     }
 
     &__links {
         display: flex;
         align-items: center;
 
+        @media (max-width: 768px) {
+            display: none;
+            padding-left: 33px;
+        }
+        
+        @media (min-width: 640px) and (max-width: 1023px) {
+            margin-left: 19%;
+        }
+
         &__item {
             padding: 5px;
             margin-left: 20px;
             font-size: 20px;
+
+            @media (min-width: 640px) and (max-width: 1023px) {
+                font-size: 30px;
+            }
+
+            a {
+                color: aliceblue;
+
+               
+            }
+            
         }
     }
 }
+
+
+
+
+
+
+
+
+
 
