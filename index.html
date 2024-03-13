@@ -7,6 +7,182 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+
+    <header  class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./src/imagens/avatar-2-logo.png" alt="logo do avatar">
+            </h1>
+
+            <ul class="header__links">
+
+                <li class="header__links__item">
+                    <a href="#hero">Inicio</a>
+                </li>
+
+                <li class="header__links__item">
+                    <a href="#shows">+Detalhes</a>
+                </li>
+
+                <li class="header__links__item">
+                    <a href="#inicio">Inicio</a>
+                </li>
+                
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="hero"  id="hero">
+        <div class="hero__container">
+            <h1 class="hero__titulo">Sinopse</h1>
+
+            <p class="hero__texto">Em Avatar 2, Sam Worthington e Zoë Saldaña reprisam seus amados papéis de Jake Sully e Neytiri, respectivamente, porém agora como pais que fazem o possível para 
+            manter sua família unida. Quando certos imprevistos os obrigam 
+            a abandonar seu lar, os Sully viajam pelas vastas paisagens de 
+            Pandora para finalmente chegar ao território dominado pelo clã 
+            Metkayina, que vive em harmonia com os oceanos que os cercam. 
+            Lá, os Sully devem aprender a navegar tanto no perigoso mundo 
+            marinho quanto na desconfortável dinâmica de ser aceito na nova 
+            comunidade.</p>
+        
+
+            <video class="hero__video" width="700" height="500" controls autoplay muted loop  poster="./dist/imagens/imagem_hero.webp">                
+                <source src="./dist/imagens/videos/trailer.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        
+            <img class="hero__logo" src="./dist/imagens/logoHero2.jpg" alt="">
+        
+    </section>
+
+    <section class="shows" id="shows">
+
+        <nav class="shows__tabs">
+            
+            <button data-tab-button="navis" class="shows__tabs__button  shows__tabs__button--is-active">Tribo Na'vis</button>
+
+            <button data-tab-button="Metkayina" class="shows__tabs__button">tribo Metkayina</button>
     
+            <button data-tab-button="paisagens" class="shows__tabs__button">Melhores Paisagens</button>
+
+            <button data-tab-button="mundo" class="shows__tabs__button">O mundo atrás das câmeras </button>
+
+        </nav>
+
+        <ul data-tab-id="navis" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <p>Trinity Jo-Li Bliss como Tuk</p>
+                <img src="./dist/imagens/elenco/Tuk.jpg" alt="Homen aranha">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Sam como Jake Sully</p>
+                <img src="./dist/imagens/elenco/Jake Sully.jpg" alt="Homen aranha">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Sigourney Weaver como Kiri</p>
+                <img src="./dist/imagens/elenco/Kiri.jpg" alt="Homen aranha">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Britain Dalton como Lo’ak</p>
+                <img src="./dist/imagens/elenco/Lo’ak.jpg" alt="Homen aranha">
+            </li>
+
+            <li class="shows__list__item">
+                <p>CCH Pounder como Mo’at
+                </p>
+                <img src="./dist/imagens/elenco/Mo’at.jpg" alt="Homen aranha">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Zoe Saldaña como Neytiri</p>
+                <img src="./dist/imagens/elenco/Neytiri.jpg" alt="Homen aranha">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Jamie Flatters como Neteyam
+                </p>
+                <img src="./dist/imagens/elenco/Neteyam.jpg" alt="Homen aranha">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Stephen como Coronel Miles 
+                </p>
+                <img src="./dist/imagens/elenco/Coronel Miles Quaritch.jpg" alt="Homen aranha">
+            </li>
+        </ul>
+
+        <ul data-tab-id="Metkayina" class="shows__list">
+            <li class="shows__list__item">
+                <p>Cliff Curtis como Tonowari</p>
+                <img src="./dist/imagens/elenco/Tonowari.jpg" alt="Tonowari">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Bailey Bass como Tsireya</p>
+                <img src="./dist/imagens/elenco/Tsireya.jpg" alt="Tsireya">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Filip Geljo como Aonung</p>
+                <img src="./dist/imagens/elenco/Aonung.jpg" alt="Homen aranha">
+            </li>
+
+            <li class="shows__list__item">
+                <p>Kate Winslet como Ronal</p>
+                <img src="./dist/imagens/elenco/Ronal.jpg" alt="Homen aranha">
+            </li>
+
+        </ul>
+
+        <ul data-tab-id="paisagens" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/imagens/paisagens/paisagem1.jpg" alt="paisagem1">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/imagens/paisagens/paisagem2.jpeg" alt="paisagem2">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/imagens/paisagens/paisagem3.webp" alt="paisagem3">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/imagens/paisagens/paisagem4.jpg" alt="paisagem4">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/imagens/paisagens/paisagem5.jpg" alt="paisagem5">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/imagens/paisagens/paisagem6.jpeg" alt="paisagem6">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/imagens/paisagens/paisagem7.jpeg" alt="paisagem7">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/imagens/paisagens/paisagem8.jpg" alt="paisagem8">
+            </li>
+
+        </ul>
+
+        <ul data-tab-id="mundo" class="shows__list">
+                <video class="shows__list__item__video" controls autoplay muted loop  poster="./dist/imagens/imagem_hero.webp">                
+                    <source src="./dist/imagens/videos/atrasDacamera.mp4" type="video/mp4"/>
+                </video>
+        
+        </ul>
+    </section>
+
+
+    <script src="./src/scripts/main.js"></script>
+
 </body>
 </html>
