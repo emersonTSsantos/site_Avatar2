@@ -2,7 +2,10 @@
     max-width: 1400px;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     margin-top: 50px;
+    background-image: url(../imagens/logoHero2.jpg);
+    background-size: cover;
     
 
     @media (max-width: 768px) {
@@ -14,31 +17,33 @@
     &__container {
         width: 100%;
         font-size: 20px;
-
-    }
-
-    &__titulo {
-        color:aliceblue;
-        margin-bottom: 15px;
-        text-align: center;
+        margin-left: 110px;
+        padding-left: 90px;
+        align-items: center;
 
         @media (max-width: 768px) {
-            text-align: center;
-            
+            margin-left: 0px;
+            padding-left: 3px;          
+            align-items: center;
         }
-
     }
 
     &__texto {
         color: rgba(182, 168, 168, 0.918);
         width: 90%;
-
+        
         @media (max-width: 768px) {
             width: 100%;
             font-size: 15px;
             text-align: center; 
-            margin: 0 auto;           
+            margin: 0 auto;   
+            padding-top: 40px;      
         }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 20px;       
+        }
+    
         
     }
 
@@ -55,6 +60,7 @@
 
     &__logo {
         width: 55%;
+        
 
         @media (max-width: 768px) {
             width: 100%;
